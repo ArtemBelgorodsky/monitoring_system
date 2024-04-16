@@ -58,11 +58,7 @@ export default function Home() {
                      <h4 className="text-lg font-bold text-navy-700 dark:text-white">
                          Показатели спирометрии у пациентов
                      </h4>
-                     <button
-                         className="linear rounded-[20px] bg-lightPrimary px-4 py-2 text-base font-medium text-brand-500 transition duration-200 hover:bg-gray-100 active:bg-gray-200 dark:bg-white/5 dark:text-white dark:hover:bg-white/10 dark:active:bg-white/20"
-                     >
-                         See all
-                     </button>
+
                  </div>
                  <div className="w-full overflow-x-scroll px-4 md:overflow-x-hidden">
                      <table role="table" className="w-full min-w-[600px] overflow-x-scroll">
