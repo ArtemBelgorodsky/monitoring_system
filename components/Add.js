@@ -27,22 +27,22 @@ export default function Add ({onChange}) {
     return(
         <>
             <div className='text-2xl' >Добавить пациента</div>
-            <input type="text" className="rounded-md w-1/2 p-3 " placeholder="Аватар" value={avatar} onChange={(e) => setAvatar(e.target.value)}>
+            <input type="text" className="rounded-md w-1/2 p-2" placeholder="Аватар" value={avatar} onChange={(e) => setAvatar(e.target.value)}>
 
             </input>
-            <input type="text" className="rounded-md w-1/2 p-3 " placeholder="ФИО" value={name} onChange={(e) => setName(e.target.value)}>
+            <input type="text" className="rounded-md w-1/2 p-2 " placeholder="ФИО" value={name} onChange={(e) => setName(e.target.value)}>
 
             </input>
-            <input type="text" className="rounded-md w-1/2 p-3 " placeholder="Возраст" value={age} onChange={(e) => setAge(e.target.value)}>
+            <input type="text" className="rounded-md w-1/2 p-2 " placeholder="Возраст" value={age} onChange={(e) => setAge(e.target.value)}>
 
             </input>
-            <input type="text" className="rounded-md w-1/2 p-3 " placeholder="Жизненная емкость легких (ЖЕЛ) л." value={tvl} onChange={(e) => setTvl(e.target.value)}>
+            <input type="text" className="rounded-md w-1/2 p-2 " placeholder="Жизненная емкость легких (ЖЕЛ) л." value={tvl} onChange={(e) => setTvl(e.target.value)}>
 
             </input>
-            <input type="text" className="rounded-md w-1/2 p-3 " placeholder="Общая емкость легких (ОЕЛ) л." value={vll} onChange={(e) => setVll(e.target.value)}>
+            <input type="text" className="rounded-md w-1/2 p-2 " placeholder="Общая емкость легких (ОЕЛ) л." value={vll} onChange={(e) => setVll(e.target.value)}>
 
             </input>
-            <input type="text" className="rounded-md w-1/2 p-3 " placeholder="Сатурация %." value={saturation} onChange={(e) => setSaturation(e.target.value)}>
+            <input type="text" className="rounded-md w-1/2 p-2 " placeholder="Сатурация %." value={saturation} onChange={(e) => setSaturation(e.target.value)}>
 
             </input>
             <button

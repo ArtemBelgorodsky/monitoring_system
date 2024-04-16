@@ -34,23 +34,20 @@ export default function Home() {
     }
 
 
-    const filterPerson = person?.filter(person => person.name.toLowerCase().includes(filtertext?.toLowerCase()))
+    const filterPerson = person?.filter(person => person?.name?.toLowerCase().includes(filtertext?.toLowerCase()))
 
-    console.log(filterPerson)
-    if (filtertext?.length == 0){
-        console.log('da')
-    }
+
 
     if (person?.length == 0) return <> <Header/>Пациентов нет</>;
 
 
 
   return (
-     <div className="bg-white">
+     <>
         <Header useFilter={handleFilter}/>
-         <div className="flex flex-col justify-center items-center h-[100vh]">
+         <div className="relative flex flex-col justify-center items-center h-[80vh]">
              <div
-                 className="flex max-w-[1000px] h-[430px] w-full flex-col rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none"
+                 className="flex max-w-[1000px] max-h-[430px] w-full flex-col rounded-[10px] border-[1px] border-gray-200 bg-white bg-clip-border shadow-md shadow-[#F3F3F3] dark:border-[#ffffff33] dark:!bg-navy-800 dark:text-white dark:shadow-none"
              >
                  <div
                      className="flex h-fit w-full items-center justify-between rounded-t-2xl bg-white px-4 pb-[20px] pt-4 shadow-2xl shadow-gray-100 dark:!bg-navy-700 dark:shadow-none"
@@ -188,6 +185,6 @@ export default function Home() {
              </div>
              <Add onChange={() => handleChange()}/>
          </div>
-     </div>
+     </>
   );
 }
